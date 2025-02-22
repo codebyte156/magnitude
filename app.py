@@ -15,6 +15,13 @@ from email.message import EmailMessage
 from utils import CvFpsCalc
 from model import KeyPointClassifier
 from model import PointHistoryClassifier
+import os
+
+
+
+
+
+
 
 # =================== Email Settings (from reference code) =================== #
 SENDER_EMAIL = "tensortitans2612@gmail.com"
@@ -585,4 +592,4 @@ def video_feed():
 
 if __name__ == '__main__':
     # Run the Flask app.
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=False)
